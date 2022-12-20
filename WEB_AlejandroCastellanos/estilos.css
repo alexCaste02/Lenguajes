@@ -435,6 +435,8 @@ header{
     grid-row-gap: 10px;    
     padding: 2%;
     align-self: center;   
+
+    border: 1px solid black;
 }
     #div2>div:nth-child(4)>img:nth-child(1){
         grid-column: 1;
@@ -466,7 +468,7 @@ header{
     #div2>div:nth-child(4)>img:nth-child(4){
         grid-column: 2;
         grid-row: 2;
-        align-self: center;   
+        align-self: start;   
         
         height: 150px;
         width: 200px;
