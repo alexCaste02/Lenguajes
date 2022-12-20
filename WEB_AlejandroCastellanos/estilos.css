@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/* los elementos contenidos en <header> pasan a color azul cielo */
+
+
+/* antes, al usar <style> dentro del propio documento html, el estilo solo se aplicaba dentro del mismo */
+
+/* ahora, como todos los documentos html utilizan la hoja de estilos "estilo.css" se aplica en los <headers> de todos */
+
+/* clase */
+.title{
+    color:darkblue;
+}
+
+
+/* id */
+#inicio{
+    background-color: darkblue;
+}
+
+
+/* lateral */
+#lateral{
+background-color: lightblue;
+}
+
+#lateral ul li:first-child{
+background: #FFFFFF;
+}
+
+#lateral ul li:nth-child(2){
+background: #CCCCCC;
+}
+
+#lateral ul li:last-child{
+background: #999999;
+}
+
+    
+/* Links */
+a:link{
+color:green;
+}
+
+a:visited{
+color:blue;
+}
+
+a:hover{
+color:red;
+}
+
+a:focus{
+color:blueviolet;
+}
+
+a:active{
+color:yellow;
+}
+
+
+/* lorem */
+#lorem p::first-line{
+    color:blue;
+}
+
+#lorem p::first-letter{
+    color:red;
+}
+
+#lorem p::selection{
+    background-color:yellow;
+    color:green;
+}
+
+
+/* listas */
+
+/*desc*/
+#e2 {
+    color: red;
+}
+
+/*hijos*/
+#e1>li {
+    color: blue;
+}
+
+/*hermanos*/
+#e1_2_1~li  {
+    color: green;
+}
+
+/*her ady*/
+#e4_1+li  {
+    color: orange;
+}
+
+/* enlaces com */
+a[href*=com]{
+    background-color: rgb(13, 13, 216);
+}
+
+
+/* divs */
+#parra1{
+    background-color: rgb(182, 255, 231);
+}
+
+#parra2{
+    background-color: rgb(206, 184, 255);
+}
+
+
+/* spans */
+#s1{
+    color: blue;
+}
+
+#s2{
+    color: rgb(15, 13, 156);
+}
+
+#s3{
+    color: rgba(3, 66, 9, 0.507);
+}
+
+#s4{
+    color: #7ADFB5;
+}
+
+#s5{
+    color: hsl(2, 61%, 28%);
+}
+
+#s6{
+    color: hsla(49, 88%, 34%, 0.753);
+}
+
+
+/* imagen fondo formulario */
+form{
+    background-image: url("padoru.png") ;
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+
+/* imagen fondo elemento */
+aside{
+    background-image: url("pog.jpg") ;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: scroll;
+}
+
+/* formato grupos parra */
+#parra1{
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parra2{
+    text-align: right;
+    word-spacing: 0.1in;
+    text-indent: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+/* bordes y marcos */
+#parra1{
+	margin: 10px 50px 40px 50px;
+	border: 5px solid red;
+	padding:10px;
+}
+
+#parra2{
+	margin: 20px 100px 80px 100px;
+	border: 5px dotted green;
+	padding:5px;
+}
+
+article{
+	margin: 5px 25px 20px 25px;
+	border: 5px dashed blue;
+	padding: 3px;
+}
+
+
+/* selector universal */
+*{
+    box-sizing:border-box;
+    max-width: 100%;
+    
+}
+
+/* encabezado centrado */
+#inicio{
+    text-align: center; 
+}
+
+/* navegacion */
+nav{
+    background-color: rgb(190, 255, 246);
+    position: sticky; 
+    top: 0px; 
+    padding: 5px;
+}
+ 
+/*elementos de la lista en fila*/
+nav li{
+    display: inline-block;
+}
+ 
+/* usamos "li a" para que el boton entero sea enlace*/
+nav li a{
+    background-color: rgb(255, 234, 188);
+    
+    /* forma boton */
+    border: 3px outset rgb(190, 255, 246);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    font-weight: bold;
+    
+}
+
+/* alineacion vertical y horizontal*/
+nav ul{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* pseudo clases a*/
+
+nav a:visited{
+    color: rgb(6, 73, 64);
+}
+
+
+nav a:hover{
+    color:rgb(189, 130, 4);
+    background-color: rgb(109, 255, 236);
+}
+
+/* quitar underline */
+nav a:link{
+    text-decoration:none;
+}
+
+nav a:focus{
+    background-color: rgb(235, 149, 36);
+}
+
+nav a:active{
+    background-color: rgb(214, 253, 248);
+}
+
+/* main */
+main {
+    max-width: 80%;
+    margin:auto;
+}
+
+/* JUNTAR */
+header{
+    background-color: darkblue;
+    padding: 5px;
+}
+
