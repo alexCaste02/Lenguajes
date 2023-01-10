@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif; /* Establecemos la fuente del texto */
+    margin: 0; /* Eliminamos los márgenes del body */
+}
+
+header {
+    background-image: url(header-bg.jpg); /* Establecemos una imagen de fondo para la cabecera */
+    background-size: cover; /* Ajustamos el tamaño de la imagen de fondo */
+    display: flex; /* Utilizamos flexbox para organizar los elementos de la cabecera */
+    align-items: center; /* Centramos los elementos verticalmente */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+    text-align: center; /* Centramos el texto */
+    padding: 20px; /* Añadimos padding a la cabecera */
+}
+
+header img {
+    max-width: 50%; /* Limitamos el tamaño del logo */
+}
+
+nav {
+    background-color: #333; /* Establecemos un color de fondo para la barra de navegación */
+    color: white; /* Establecemos el color del texto */
+    text-align: center; /* Centramos el texto */
+    padding: 10px 0; /* Añadimos padding superior e inferior */
+}
+
+nav a {
+    color: white; /* Establecemos el color del texto de los enlaces */
+    text-decoration: none; /* Eliminamos la subraya de los enlaces */
+    padding: 0 10px; /* Añadimos padding izquierdo y derecho */
+    transition: color 0.2s; /* Establecemos una transición para el color de los enlaces */
+}
+
+nav a:hover {
+    color: gray; /* Cambiamos el color del texto cuando el ratón está sobre el enlace */
+}
+
+nav a:active {
+    color: black; /* Cambiamos el color del texto cuando se hace clic en el enlace */
+}
+
+main {
+    display: flex; /* Utilizamos flexbox para organizar los elementos de la página principal */
+    justify-content: center; /* Centramos los elementos horizontalmente */
+}
+
+article {
+    max-width: 800px; /* Limitamos el tamaño del artículo */
+    text-align: justify; /* Justificamos el texto */
+    padding: 20px; /* Añadimos padding al artículo */
+    margin: 20px; /* Añadimos margen al artículo */
+}
+
+aside {
+    background-color: #f2f2f2; /* Establecemos un color de fondo para la barra lateral */
+    padding: 20px; /* Añadimos padding a la barra lateral */
+    text-align: center;
+}
