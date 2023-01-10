@@ -835,32 +835,22 @@ header{
         #div2>div:nth-child(4)>img{
             border-radius: 20px;
         }
-
         
-
         #div2>div:nth-child(4)>div{
             background-color: grey;
             grid-row: 4;
         }
 
-            #div2>div:nth-child(4)>div>:nth-child(1){            
-
+            #div2>div:nth-child(4)>div>:nth-child(1){          
                 text-align: center;
-            }
+            } 
 
-  
-
-
-    #div2>div:nth-child(5){
-       
-        grid-row: 8;
-        
+    #div2>div:nth-child(5){       
+        grid-row: 8;        
         grid-column: 1/8;
-        overflow-x: scroll;
-        
+        overflow-x: scroll;        
     }
-    
-    
+        
     /* footer */
     #div2>div:nth-child(6){
         background-color: gold;
@@ -870,8 +860,5 @@ header{
         text-align: center;
         align-self: center;
         padding: 10px;
-    }
-
-
-         
+    }      
 }
