@@ -6,7 +6,6 @@
 /* antes, al usar <style> dentro del propio documento html, el estilo solo se aplicaba dentro del mismo */
 
 /* ahora, como todos los documentos html utilizan la hoja de estilos "estilo.css" se aplica en los <headers> de todos */
-
 /* clase */
 .title{
     color:darkblue;
