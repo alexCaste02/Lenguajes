@@ -22,7 +22,7 @@ header img {
 nav {
     background-color: #333; /* Establecemos un color de fondo para la barra de navegación */
     color: white; /* Establecemos el color del texto */
-    text-align: center; /* Centramos el texto */
+    
     padding: 10px 0; /* Añadimos padding superior e inferior */
     display: flex; /* utilizamos flexbox para organizar los elementos del nav */
     justify-content: center; /* centramos los elementos horizontalmente */
