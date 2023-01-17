@@ -62,3 +62,8 @@ aside {
     padding: 20px; /* Añadimos padding a la barra lateral */
     text-align: center;
 }
+
+fieldset {
+    display: grid;
+    padding: 20px;
+}
