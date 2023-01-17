@@ -45,8 +45,9 @@ nav {
     }
 
 main {
-    display: flex; /* Utilizamos flexbox para organizar los elementos de la página principal */
+    display: grid; /* Utilizamos flexbox para organizar los elementos de la página principal */
     justify-content: center; /* Centramos los elementos horizontalmente */
+    
 }
 
 article {
