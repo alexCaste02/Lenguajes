@@ -19,6 +19,7 @@ header {
 
 header img {
     max-width: 10%; /* Limitamos el tamaño del logo */
+    
 }
 
 nav {
@@ -26,7 +27,6 @@ nav {
     color: white; /* Establecemos el color del texto */
     
     padding: 10px 0; /* Añadimos padding superior e inferior */
-    display: flex; /* utilizamos flexbox para organizar los elementos del nav */
     justify-content: center; /* centramos los elementos horizontalmente */
     align-items: center; /* centramos los elementos verticalmente */
     
@@ -35,9 +35,8 @@ nav {
     nav a {
     color: white; /* Establecemos el color del texto de los enlaces */
     text-decoration: none; /* Eliminamos la subraya de los enlaces */
-    padding: 0 10px; /* Añadimos padding izquierdo y derecho */
     transition: color 0.2s; /* Establecemos una transición para el color de los enlaces */
-    
+
     }
     
     nav a:hover {
@@ -49,15 +48,16 @@ nav {
     }
 
     nav ul{
-        list-style: none
+        list-style: none;
+        text-align: center;
+        padding: 0 0 0 0;
     }
+
+    
 
 main {
     display: grid; /* Utilizamos flexbox para organizar los elementos de la página principal */
-    justify-content: center; /* Centramos los elementos horizontalmente */
-    
-
-    
+    justify-content: center; /* Centramos los elementos horizontalmente */   
 }
     
 article {
@@ -70,13 +70,14 @@ article {
 aside {
     background-color: #f2f2f2; /* Establecemos un color de fondo para la barra lateral */
     padding: 20px; /* Añadimos padding a la barra lateral */
-    text-align: center;/* Alienamos */
+        
 }
+
     aside img{
         max-width: 100%
     }
 
-
+    
 fieldset {
     display: grid;
     padding: 20px;
