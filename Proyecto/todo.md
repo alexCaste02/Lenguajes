@@ -3,7 +3,7 @@
 ### Diseña una página web sobre el tema que desees que cumpla con los siguientes requisitos:
 
 
-- [ ] Comentar adecuadamente cada apartado de los html y del css.
+
 
 - [ ] Debe tener una página principal (index.html) y, al menos, dos subpáginas. Una de las subpáginas incluirá información acerca del proyecto o empresa sobre el que versa la web y la otra subpágina incluirá información de contacto y un formulario con al menos 5 campos (nombre, apellidos, correo electrónico, campo de escritura de mensaje,...) para que los usuarios envíen sus consultas.
 
@@ -24,6 +24,8 @@
 - [ ] En el footer, incluye información sobre el autor de la web.
 
 - [ ] Haz que el tamaño de la letra se adapte a las características responsivas de tu web.
+
+- [ ] Comentar adecuadamente cada apartado de los html y del css.
 
 
 Para la entrega, comprime la carpeta que contiene todos los archivos de tu proyecto web y súbela al espacio habilitado a continuación
