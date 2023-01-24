@@ -5,7 +5,7 @@
 
 
 
-- [ ] Debe tener una página principal (index.html) y, al menos, dos subpáginas. Una de las subpáginas incluirá información acerca del proyecto o empresa sobre el que versa la web y la otra subpágina incluirá información de contacto y un formulario con al menos 5 campos (nombre, apellidos, correo electrónico, campo de escritura de mensaje,...) para que los usuarios envíen sus consultas.
+- [x] Debe tener una página principal (index.html) y, al menos, dos subpáginas. Una de las subpáginas incluirá información acerca del proyecto o empresa sobre el que versa la web y la otra subpágina incluirá información de contacto y un formulario con al menos 5 campos (nombre, apellidos, correo electrónico, campo de escritura de mensaje,...) para que los usuarios envíen sus consultas.
 
 - [ ] Se debe diseñar un layout que debe contener, al menos, una cabecera, una barra de navegación, una barra lateral con enlaces externos, un espacio principal para el contenido y un footer. Todas las páginas de la web deben tener la misma estructura.
 
