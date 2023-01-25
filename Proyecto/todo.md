@@ -11,7 +11,7 @@
 
 - [ ] El diseño del layout ha de ser responsivo (ha de adaptarse a la eventual reducción de tamaño de la ventana del navegador como consecuencia de la visualización de la página mediante dispositivos móviles o tablets) y ha de incluir al menos 2 breakpoints.
 
-- [ ] La cabecera ha de incluir una imagen de fondo que permita leer el título de la web en el navegador.
+- [x] La cabecera ha de incluir una imagen de fondo que permita leer el título de la web en el navegador.
 
 - [ ] Los elementos de la barra de navegación han de tener aspecto de botones cuyo texto tenga un color u otro en función del estado del enlace (visitado, no visitado, elemento sobre el que está el ratón, elemento que recibe el clic).
 
