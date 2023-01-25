@@ -31,8 +31,12 @@ nav {
     align-items: center; /* centramos los elementos verticalmente */
     
     display: flex;
-    position: fixed;
+    position:sticky;
+    top: 0;
+
+    
     width: 100%;
+
     }
     
     nav a {
@@ -55,29 +59,34 @@ nav {
         background-color: black; /* Cambiamos el color del texto cuando se hace clic en el enlace */
     }
 
+    nav a:visited{
+        background-color: rgb(49, 35, 49); /* Cambiamos el color del texto cuando el enlace fue previamente visitado*/
+    }
+
     nav ul{
         list-style: none;
         text-align: center;
-        padding: 0 0 0 0; /* quitamos el padding de la lista */
-        
+        padding: 0 0 0 0; /* quitamos el padding de la lista */        
         display: inherit;
         justify-content: center;
     }
 
-    nav li{
-        
+    nav li{        
         margin: 0% 5% 0% 5%;
         display: inherit;
-        align-items: center;
-    
-
+        align-items: center;   
     }
 
     
 
 main {
     display: grid; /* Utilizamos flexbox para organizar los elementos de la página principal */
-    justify-content: center; /* Centramos los elementos horizontalmente */   
+    justify-content: center; /* Centramos los elementos horizontalmente */ 
+    grid-template-columns: 10% 80% 10%;  
+}
+
+main>section:nth-child(1) {
+    grid-column: 2;
 }
     
 article {
@@ -85,6 +94,14 @@ article {
     text-align: justify; /* Justificamos el texto */
     padding: 20px; /* Añadimos padding al artículo */
     margin: 20px; /* Añadimos margen al artículo */
+}
+
+section {
+    
+}
+
+#formulario{
+    
 }
 
 aside {
@@ -104,8 +121,9 @@ fieldset {
 }
 
 footer{
-    color: #fff !important;
+    color: #fff ;
     background-color: rgb(20, 20, 20);
     text-align: center;
     padding: 16px 16px;
+    
 }
