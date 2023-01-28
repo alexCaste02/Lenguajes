@@ -13,7 +13,7 @@
 
 - [x] La cabecera ha de incluir una imagen de fondo que permita leer el título de la web en el navegador.
 
-- [ ] Los elementos de la barra de navegación han de tener aspecto de botones cuyo texto tenga un color u otro en función del estado del enlace (visitado, no visitado, elemento sobre el que está el ratón, elemento que recibe el clic).
+- [x] Los elementos de la barra de navegación han de tener aspecto de botones cuyo texto tenga un color u otro en función del estado del enlace (visitado, no visitado, elemento sobre el que está el ratón, elemento que recibe el clic).
 
 - [ ] Los elementos del espacio o caja principal de contenido deben definirse como artículos y deben tener un mismo formato. Para ello, estos elementos tendrán unas mismas características de alineación de texto, interlineado, sangría en primera línea de párrafo, tipo y tamaño de fuente para la letra del título, tipo y tamaño de fuente para la letra del cuerpo del texto, márgenes, bordes, relleno.
 
@@ -21,7 +21,7 @@
 
 - [ ] En la barra lateral, incluye al menos 4 banners que enlacen a páginas de interés relacionadas con el tema de tu web.
 
-- [ ] En el footer, incluye información sobre el autor de la web.
+- [x] En el footer, incluye información sobre el autor de la web.
 
 - [ ] Haz que el tamaño de la letra se adapte a las características responsivas de tu web.
 
