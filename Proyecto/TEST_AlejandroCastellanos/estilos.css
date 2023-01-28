@@ -1,67 +1,112 @@
+/* Establecemos la fuente del texto */
 body {
-    font-family: Arial, sans-serif; /* Establecemos la fuente del texto */
+    font-family: Arial, sans-serif; 
     margin: 0; /* Eliminamos los márgenes del body */
+    display: grid; /* Utilizamos grid layout para organizar los elementos de la página */
+    grid-template-columns: 8% auto ;    
 }
 
+/* Establecemos una imagen de fondo para la cabecera, ajustamos su tamaño y posición */
 header {
-    background-image: url(header-bg.jpg); /* Establecemos una imagen de fondo para la cabecera */
-    background-size: cover; /* Ajustamos el tamaño de la imagen de fondo */
-    display: flex; /* Utilizamos flexbox para organizar los elementos de la cabecera */
-    align-items: center; /* Centramos los elementos verticalmente */
-    justify-content: center; /* Centramos los elementos horizontalmente */
+    background-image: url(header-bg-art-scale-4_00x-gigapixel.jpg); 
+    background-size: cover; 
+    background-position: center; 
+
+    /* Utilizamos grid layout para alinea el texto titulo */
+    display: grid; 
+    grid-template-rows: 40% auto ;    
+
+    /* Centramos los elementos vertical y horizontalmente */
+    align-items: center; 
+    justify-content: center; 
     text-align: center; /* Centramos el texto */
     padding: 20px; /* Añadimos padding a la cabecera */
-    color: #beb2b2; /* Color de texto de encab*/
+    color: #d1c628; /* Color de texto de encab*/
     font-family: 'Inter', sans-serif;
     font-size: large;
     text-shadow: 2px 2px rgb(51, 73, 192);
+    height: 300px;
+
+    /* Establecemos el grid area para la cabecera */
+    grid-row: 1/2;
+    grid-column: 1/4;
 }
 
-header img {
-    max-width: 10%; /* Limitamos el tamaño del logo */
-    
+/* Establecemos el grid area para el titulo en la cabecera */
+header h1{
+    grid-row: 1/2;
 }
 
+/* Establecemos el grid area para el div del logo */
+#logodiv{
+    background-color: rgb(119, 201, 248);
+    height: 120px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+    /* Utilizamos grid layout para centrar el logo dentro del div */
+    display: grid;
+}
+
+/* Limitamos el tamaño del logo y centramos el mismo */
+#logodiv>img {        
+        height: 100px;
+        align-self: center;
+        justify-self: center;
+}
+
+/* Establecemos un color de fondo para la barra de navegación, el color del texto */
 nav {
-    background-color: #333; /* Establecemos un color de fondo para la barra de navegación */
-    color: white; /* Establecemos el color del texto */
-    
-    padding: 10px 0; /* Añadimos padding superior e inferior */
-    justify-content: center; /* centramos los elementos horizontalmente */
-    align-items: center; /* centramos los elementos verticalmente */
-    
+    background-color: #333; 
+    color: white; 
+    /* Añadimos padding superior e inferior, centramos los elementos horizontal y verticalmente */
+    padding: 10px 0; 
+    justify-content: center; 
+    align-items: center; 
+    /* Utilizamos flexbox para organizar los elementos de la barra de navegación */
     display: flex;
-    position:sticky;
-    top: 0;
+    /* Hacemos que la barra de navegación sea "sticky" (se mantenga visible en todo momento) */
 
+    position: sticky;
+    top: 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     
     width: 100%;
+
+    height: 100px;
 
     }
     
     nav a {
         color: white; /* Establecemos el color del texto de los enlaces */
         text-decoration: none; /* Eliminamos la subraya de los enlaces */
-        border:3px solid #282323;
-        padding: 15px 25px 15px 25px;
+        border:3px solid #282323;    
         border-radius: 15px;
-        background-color: #4a4a4a;
-        transition: background-color 0.2s; /* Establecemos una transición para el color de los enlaces */
+
+        background-color: #4a4a4a;      
+        padding: 15px 25px 15px 25px;
+
+        transition: color 0.2s; /* Establecemos una transición para el color de los enlaces */
     
         width: 150px;
+        font-weight: bolder;
+    }
+    
+    nav a:visited{
+        color: rgb(49, 35, 49); /* Cambiamos el color del texto cuando el enlace fue previamente visitado*/
     }
     
     nav a:hover {
-        background-color: gray; /* Cambiamos el color del texto cuando el ratón está sobre el enlace */
+        color: gray; /* Cambiamos el color del texto cuando el ratón está sobre el enlace */
+        
     }
     
     nav a:active {
-        background-color: black; /* Cambiamos el color del texto cuando se hace clic en el enlace */
+        color: black; /* Cambiamos el color del texto cuando se hace clic en el enlace */
     }
 
-    nav a:visited{
-        background-color: rgb(49, 35, 49); /* Cambiamos el color del texto cuando el enlace fue previamente visitado*/
-    }
+    
 
     nav ul{
         list-style: none;
@@ -79,53 +124,117 @@ nav {
 
     
 
+
 main {
-    display: grid; /* Utilizamos flexbox para organizar los elementos de la página principal */
+    display: inherit; /* Utilizamos flexbox para organizar los elementos de la página principal */
     justify-content: center; /* Centramos los elementos horizontalmente */ 
-    grid-template-columns: 10% 80% 10%;  
-    
-}
-
-main>section:nth-child(1) {
+    grid-row: 3 ;
     grid-column: 2;
-}
 
-main>section:nth-child(2) {
-    grid-column: 2;
-}
-
-main>section:nth-child(3) {
-    grid-column: 2;
-}
-
-main>section:nth-child(4) {
-    grid-column: 2;
-}
+    background-image: url(endless-constellation.png);
+    background-repeat:repeat;
     
-article {
-    max-width: 800px; /* Limitamos el tamaño del artículo */
-    text-align: justify; /* Justificamos el texto */
-    padding: 20px; /* Añadimos padding al artículo */
-    margin: 20px; /* Añadimos margen al artículo */
+    
+    background-size: 110px;
 }
 
-section {
+   
     
-}
+    article {
+        text-align: center; /* alineación de texto justificada */
+        line-height: 1.5; /* interlineado de 1.5 */
+        text-indent: 1em; /* sangría en primera línea de párrafo de 1em */
+        font-family: 'Arial', sans-serif; /* tipo de fuente Arial para el título y cuerpo del texto */
+        font-size: 18px; /* tamaño de fuente de 18px para el título */
+        font-size: 16px; /* tamaño de fuente de 16px para el cuerpo del texto */
+        margin: 0 auto; /* márgenes automáticos */
+        color: white; 
+        padding: 2%;
+    }
+    
+    /* Estilo específico para el título */
+    article h2 {
+        font-size: 30px; /* tamaño de fuente de 24px para el título */
+    }
 
-#formulario{
+    video{
+        width: 100%;
+    }
+
+    #articulo1div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        padding: 30px;
+        background-color: rgb(1, 1, 20);
+        
+    }
+
+        #articulo1div img{
+            width: 100%;
+            
+            margin: 10px;
+            
+        }
+
+    #articulo2div img{
+        width: 100%;
+        
+    }
     
-}
+
+
 
 aside {
-    background-color: #f2f2f2; /* Establecemos un color de fondo para la barra lateral */
-    padding: 20px; /* Añadimos padding a la barra lateral */
-        
+    background-color: #0b3d91; /* NASA blue */
+    color: white;
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    
+
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    position: sticky;
+    top:0;
+    
+    
 }
 
-    aside img{
-        max-width: 100%
+    aside div{
+        background-color: #0b3d91; /* NASA blue */
+        color: white;
+        
+        font-family: 'Arial', sans-serif;
+        font-size: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        
+
+        grid-row: 3/4;
+        grid-column: 1/2;
+
+        position: sticky;
+        top:0;
+        height: 1000px;
+        
     }
+
+    aside h3 {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    aside img {
+        width: 60%;        
+        margin-top: 50%;
+        border-radius: 5px;
+    }
+
 
     
 fieldset {
@@ -150,6 +259,61 @@ footer{
     color: #fff ;
     background-color: rgb(20, 20, 20);
     text-align: center;
-    padding: 16px 16px;
-    
+    padding: 16px 0 16px 0;
+    grid-column: 1/3;
+    grid-row: 4;
+    z-index: 1;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+body {
+grid-template-columns: 100%;
+}
+header {
+background-position: top;
+grid-template-rows: auto;
+height: auto;
+grid-row: 1/2;
+grid-column: 1/2;
+}
+header h1 {
+font-size: medium;
+}
+#logodiv {
+height: 80px;
+grid-row: 2/3;
+grid-column: 1/2;
+}
+#logodiv > img {
+height: 60px;
+}
+nav {
+grid-row: 3/4;
+grid-column: 1/2;
+height: auto;
+}
+nav a {
+font-size: small;
+padding: 10px 15px 10px 15px;
+width: 100px;
+}
+main {
+grid-row: 4;
+grid-column: 1/2;
+}
+}
+
+@media screen and (max-width: 480px) {
+header h1 {
+font-size: small;
+}
+#logodiv > img {
+height: 40px;
+}
+nav a {
+font-size: x-small;
+padding: 5px 10px 5px 10px;
+width: 80px;
+}
 }
