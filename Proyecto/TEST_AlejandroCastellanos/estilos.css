@@ -141,7 +141,7 @@ nav li {
 
 main {
     display: inherit;
-    /* Utilizamos flexbox para organizar los elementos de la página principal */
+    
     /* Centramos los elementos horizontalmente */
     grid-row: 3;
     grid-column: 2;
