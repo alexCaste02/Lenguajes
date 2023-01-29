@@ -5,7 +5,7 @@ body {
     /* Eliminamos los márgenes del body */
     display: grid;
     /* Utilizamos grid layout para organizar los elementos de la página */
-    grid-template-columns: 8% auto;
+    grid-template-columns: 100px auto;
 }
 
 /* Establecemos una imagen de fondo para la cabecera, ajustamos su tamaño y posición */
@@ -290,52 +290,4 @@ footer {
     grid-row: 4;
     z-index: 1;
     width: 100%;
-}
-
-@media screen and (max-width: 860px) and (min-width:450px) {
-    .header {
-        position: relative;
-    }
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
-
-    .header nav a {
-        display: block;
-        margin: 0;
-        padding: 0.5em;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .header {
-        position: relative;
-    }
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
-
-    .header nav a {
-        display: block;
-        margin: 0;
-        padding: 0.5em;
-        text-align: center;
-    }
 }
