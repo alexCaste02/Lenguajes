@@ -151,6 +151,7 @@ nav {
         align-items: center;
     }
 
+/* Propiedades del la zona principal */
 main {
     background-image: url(endless-constellation.png);
     background-repeat: cover;
@@ -166,23 +167,20 @@ main {
     grid-column: 2;    
 }
 
+/* Propiedades de todos los articulos */
 article {
-    /* Alineación de texto centrada */
+    padding: 2%;    
     text-align: center;
+    font-family: 'Arial', sans-serif;  
     
     /* Interlineado */
     line-height: 1.5;
     
-    text-indent: 15px;
     /* sangría en primera línea de párrafo de 1em */
-    font-family: 'Arial', sans-serif;
-    /* tipo de fuente Arial para el título y cuerpo del texto */
+    text-indent: 15px;    
     
-    
-    margin: 0 auto;
-    /* márgenes automáticos */
-    
-    padding: 2%;
+    /* márgenes laterales automáticos */
+    margin: 0 auto;   
 
     /* tamaño de fuente de 16px para el cuerpo del texto */
     font-size: 16px;
@@ -198,6 +196,7 @@ video {
     width: 100%;
 }
 
+/* Grupo de imagenes tras el primer articulo */
 #articulo1div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -306,8 +305,6 @@ aside {
 
     position: sticky;
     top: 0;
-
-
 }
 
 aside div {
