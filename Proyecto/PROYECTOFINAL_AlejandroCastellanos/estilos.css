@@ -198,6 +198,7 @@ video {
 
 /* Grupo de imagenes tras el primer articulo */
 #articulo1div {
+    /* 3 fotos alineadas en una misma fila */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -205,28 +206,33 @@ video {
     background-color: rgb(1, 1, 20);
 }
 
-#articulo1div img {
-    width: 100%;
-    margin: 10px;
-}
+    /* Tamaños de imagenes */
+    #articulo1div img {
+        width: 100%;
+        margin: 10px;
+    }
 
+/* Imagenes tras los articulos 2 y 3 */
 .imgmaxancho img {
     width: 100%;
 }
 
-
-#ultimaseccion{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: auto;
+/* Propiedades de los ultimos 2 articulos */
+#ultimaseccion{ 
     justify-content: center;
     align-items: center;
-    border: 10px ridge rgb(92, 7, 7);
-    
+    border: 10px ridge rgb(92, 7, 7);    
     border-radius: 25px;
     margin: 0 10px 0 10px;
     padding: 10px;
+
+    /* Grid de 4 columnas y 2 filas*/
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: auto;
 }
+
+    /* Articulo 1 de la ultima seccion*/
     #ultimaseccion #ultart1 {
         grid-row: 1;
         grid-column: 1/4;
@@ -234,6 +240,7 @@ video {
         text-align: justify;
     }
 
+     /* Imagen 1 de la ultima seccion*/
     #ultimaseccion #ultimg1 {
         max-width: 100%;
         max-height: 100%;
@@ -242,12 +249,14 @@ video {
         justify-self: center;
     }
 
+     /* Articulo 2 de la ultima seccion*/
     #ultimaseccion #ultart2 {
         grid-row: 2;
         grid-column: 2/5;
         text-align: justify;
     }
 
+     /* Imagen 2 de la ultima seccion*/
     #ultimaseccion #ultimg2{
         max-width: 100%;
         max-height: 100%;
@@ -256,103 +265,112 @@ video {
         justify-self: center;
     }
 
-
-
+/* Propiedades de la seccion en la pagina de Acerca De*/
 #acerca{    
     padding:10% 20% 20% 20%;    
 }
 
-
+/* Propiedades del formulario en la pagina de Contacto*/
 #formulario{
     width: 60%;
     justify-self: center;
     padding-top: 5%;
 }
 
-fieldset {
-    padding: 20px;
-    width: 100%;
-}
+    /* Ajuste de tamaño del campo form */
+    fieldset {
+        padding: 20px;
+        width: 100%;
+    }
 
-.itemsform {
-    width: 100%;
-    height: 15px;
-}
+    /* Tamaño items formulario */
+    .itemsform {
+        width: 100%;
+        height: 15px;
+    }
 
-#textarea {
-    height: 100px;
-}
+    /* Tamaño area texto formulario */
+    #textarea {
+        height: 100px;
+    }
 
-#enviar {
-    height: 30px;
-    width: 100%;
-}
+    /* Tamaño boton enviar formulario */
+    #enviar {
+        height: 30px;
+        width: 100%;
+    }
 
-
+/* Propiedades de la barra lateral */
 aside {
     background-color: #0b3d91;
-
     color: white;
-
     font-family: 'Arial', sans-serif;
     font-size: 10px;
     text-align: center;
+
+    /* Sombreado del aside */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
-
+    /* Posicionamiento de la barra lateral a la izquierda del main*/
     grid-row: 3/4;
     grid-column: 1/2;
 
+    /* Hacemos que el aside sea "sticky" (se mantenga visible en todo momento) */
     position: sticky;
     top: 0;
 }
 
-aside div {
-    background-color: #0b3d91;
-   
-    color: white;
+    aside div {
+        background-color: #0b3d91;   
+        color: white;
+        font-family: 'Arial', sans-serif;
+        font-size: 10px;
+        text-align: center;
+    
+        /* Hacemos que el los elementos del aside sean "sticky" (se mantenga visible en todo momento) */
+        position: sticky;
+        top: 0;
 
-    font-family: 'Arial', sans-serif;
-    font-size: 10px;
-    text-align: center;
- 
+        /* Tamaño forzado para no ocupar toda la columna (y que funcione el sticky)*/
+        /* Se repite todo para que el color de fondo se mantenga en toda la barra lateral, pero el tamaños de los elementos solo se ajuste a la pagina visualizada*/
+        height: 1000px;
+    }
 
-    position: sticky;
-    top: 0;
-    height: 1000px;
+    /* Propiedades del titulo aside */
+    aside h3 {
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
 
-}
+    /* Propiedades de las imagenes del aside*/
+    aside img {
+        width: 60%;
+        margin-top: 50%;
+    }
 
-aside h3 {
-    margin-top: 10px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-aside img {
-    width: 60%;
-    margin-top: 50%;
-    border-radius: 5px;
-}
-
-
+/* Propiedades del footer */
 footer {
     color: #fff;
     background-color: rgb(20, 20, 20);
     text-align: center;
-    padding: 16px 0 16px 0;
+    width: 100%;
+
+    /* Padding superior e inferior */
+    padding: 16px 0;
+
+    /* Posicionamiento del footer bajo el main dentro del body*/
     grid-column: 1/3;
     grid-row: 4;
-    z-index: 1; /* superponemos el footer por encima del resto de elementos (aside)*/
-    width: 100%;
+
+     /* superponemos el footer por encima del resto de elementos (aside)*/
+    z-index: 1;   
 }
 
 /* RESPONSIVIDAD */
 
+/* Tamaño medio */
 @media (max-width: 982px) and (min-width: 684px) {
-
-    
-
 
     /* centrar fondo header cuando cambia tamaño*/
     header{
@@ -370,57 +388,46 @@ footer {
     }
    
     /*cambiar grid ultimos 2 articulos*/
-    #ultimaseccion {
-                
+    #ultimaseccion {                
         grid-template-rows: 1fr 160px 1fr;
         grid-template-columns: 1fr 1fr;
-        align-items: baseline;
-        
+        align-items: baseline;        
     }
         #ultimaseccion #ultart1{
             grid-row:  1/2;
             grid-column: 1/3;
-
         }
         #ultimaseccion #ultimg1{
             grid-row:  2/3;
-            grid-column: 1/2;
+            grid-column: 1/2;        
         }
         #ultimaseccion #ultimg2{
             grid-row:  2/3;
-            grid-column: 2/3;
-            
+            grid-column: 2/3;            
         }
-
         #ultimaseccion #ultart2{
             grid-row:  3/4;
             grid-column: 1/3;
-        }
-    
+        }    
 
+    /* cambio de tamaño de letra articulos y titulos */
     article{
         font-size: 18px;
-    }
-
+    }    
     article h2 {
-        font-size: 35px;
-        /* tamaño de fuente para el título */
+        font-size: 35px;        
     } 
-
-
 }
 
+/* Tamaño pequeño */
 @media (max-width: 684px)  { 
+
     /* centrar fondo header cuando cambia tamaño*/
     header{
         background-position: center;
-    }
+    }    
 
-    /*aside cambia tamaño*/
-    body {
-        grid-template-columns: 10% auto;
-    }
-
+    /* Main ocupa todo el ancho de pagina */
     main{
         grid-column: 1/3;
     }
@@ -433,15 +440,16 @@ footer {
         grid-column: 1/3;
     }       
 
+        /*botones nav se juntan*/
         nav li {
             margin:0;
             padding: 10px;            
         }
 
+        /*botones mas anchos*/
         nav a {
             width: 250px;
         }
-
 
     /*aside debajo de los articulos*/
     aside{
@@ -450,19 +458,23 @@ footer {
     }
 
     /*aside en horizontal*/
-    aside div{
-        position: relative;
-        display: grid;
-        grid-template-columns: 5;
-        grid-template-rows: 30px 120px;
-        height: 100px;
-    }
+        aside div{
+            /*Usamos un grid de 2 filas y 5 columnas para colocarlo horizontalmente*/            
+            display: grid;
+            grid-template-columns: 5;
+            grid-template-rows: 30px 120px;
+            height: 100px;
 
-    aside h3 {
-        grid-row: 1;
-        grid-column: 1/6;
-        margin-top: 2px;
-    }
+            /* Dejamos de estar sticky, para que se quede bajo el main */
+            position: relative;
+        }
+
+        /*Texto en primera fila del nuevo grid*/
+        aside h3 {
+            grid-row: 1;
+            grid-column: 1/6;
+            margin-top: 2px;
+        }
 
         aside img{
             margin-top: 5px;
@@ -470,6 +482,7 @@ footer {
             max-width: 50px;
         }
 
+        /* Reposicionamiento del aside para estar horizontal dentro del nuevo grid */
         aside :nth-child(2) {
             grid-row: 2;
             grid-column: 1;
@@ -491,52 +504,45 @@ footer {
             grid-column: 5;
         }
 
-    /*cambiar grid ultimos 2 articulos*/
-    #ultimaseccion {
-                
+    /*cambiamos el grid de los ultimos 2 articulos*/
+    #ultimaseccion {                
         grid-template-rows: 1fr auto auto 1fr;
         grid-template-columns: 1fr;
         align-items: baseline;
-        text-align: justify;
-        
+        text-align: justify;        
     }
+        /*Reposicionamiento*/
         #ultimaseccion #ultart1{
             grid-row:  1/2;     
             grid-column: 1;    
         }
-
         #ultimaseccion #ultimg1{
             grid-row:  2/3;   
-            grid-column: 1;     
-            
+            grid-column: 1;            
             max-height: auto;
             padding: 20px;
         }
-
         #ultimaseccion #ultimg2{
             grid-row:  3/4;  
             grid-column: 1;     
             max-height: auto;
             padding: 20px;
         }
-
         #ultimaseccion #ultart2{
             grid-row:  4/5;  
             grid-column: 1;             
         }
 
+    /* Colocamos el footer en la nueva ultima fila*/
     footer{
         grid-row: 6/7;
     }   
 
+    /* cambio de tamaño de letra articulos y titulos */
     article{
         font-size: 20px;
     }
-
     article h2 {
-        font-size: 40px;
-        /* tamaño de fuente para el título */
-    }  
-    
-    
+        font-size: 40px;       
+    }      
 }
