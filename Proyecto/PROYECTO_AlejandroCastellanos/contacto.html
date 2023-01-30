@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
+    <!-- Cabeza de pagina -->
     <head>
-        <title>Proyecto Alejandro CD Web Responsiva</title>
+        <title>Contacto</title>
+        <link rel="icon" href="logo.png" type="image/icon type">    
         <meta charset="UTF-8">
         <meta name="description" content="Proyecto Web Responsiva">
         <meta name="keywords" content="proyecto, responsivo">
@@ -10,55 +12,95 @@
         <link rel="stylesheet" href="estilos.css">
     </head>
 
-    <body>        
-        <header><h1>Proyecto Alejandro CD Web Responsiva</h1></header>
+    <!-- Cuerpo -->   
+    <body>
+
+        <!-- Encabezado (con titulo) -->
+        <header>
+            <h1> ARTEMIS MISSION </h1>
+        </header>
+
+            
+        <div id="logodiv">
+            <img src="logo.png" alt="logo nasa">
+        </div>
+
+        <!-- Barra de navegacion -->
         <nav>
             <ul>
-                <li><a href=".\index.html">Principal</a></li>
-                <li><a href=".\acercade.html">Acerca de</a></li>
-                <li><a href=".\contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
+        <!-- Contenido principal -->
         <main>
-            <section>
-                <h1>Informacion de contacto</h1>
-
-            </section>
-            <section>
-                <h1>Formulario</h1>
+            
+            <!-- Seccion unica del formulario -->
+            <section id="formulario">
+                <h1>Contacta con nosotros</h1>
                 <form>
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre"><br><br>
+                    <fieldset>
+                        <legend>Informacion de contacto</legend>
 
-                    <label for="apellido">Apellido:</label><br>
-                    <input type="text" id="apellido" name="apellido"><br><br>
+                        <label for="nombre" >Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" class="itemsform"><br><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" id="apellido" name="apellido" class="itemsform"><br><br>
 
-                    <label for="email">Mensaje:</label><br>
-                    <textarea type="textarea" id="text" name="text">Que quieres contarme...</textarea>
-                    <br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" class="itemsform"><br><br>
 
-                    <input type="submit" value="Enviar"id="enviar" name="enviar"><br><br>
+                        <label for="email">Telefono:</label><br>
+                        <input type="number" id="email" name="email" class="itemsform"><br><br>
+
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea type="textarea" id="textarea" name="text" placeholder="Que quieres contarme..." class="itemsform"></textarea>
+                        <br><br>
+
+                        <input type="submit" value="Enviar"id="enviar" name="enviar" ><br><br>
+                    </fieldset>                    
                 </form>
             </section>
-            <div>
-            </div>                
+                        
         </main>
         
-        <aside id="lateral">
-            <h3>Enlaces</h3>
-            <ul>
-                <li class="latli"><a href="https://www.w3schools.com/html/default.asp" target="_blank">1</a></li>
-                <li class="latli"><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">2</a></li>
-                <li class="latli"><a href="https://desarrolloweb.com/home/html" target="_blank">3</a></li>
-            </ul>
+        <!-- Barra lateral -->
+        <aside>
+
+            <div>
+                <h3>OTROS LINKS</h3>
+
+                <a href="https://www.nasa.gov/specials/artemis/">
+                    <img src="art.png" alt="Pagina promocional programa Artemis">
+                </a>
+
+                <a href="https://www.nasa.gov/artemisprogram">
+                    <img src="kindpng_4660666.png" alt="Mas informacion sobre Artemis">
+                </a>
+
+                <a href="https://en.wikipedia.org/wiki/Artemis">
+                    <img src="Wikipedia-logo_ka.png" alt="Articulo de wikipedia">
+                </a>
+
+                <a href="https://twitter.com/NASA">
+                    <img src="Twitter-logo-png.png" alt="Twitter oficial de la NASA">
+                </a>
+
+                <a href="https://www.instagram.com/nasaartemis/">
+                    <img src="instagram_icon.png" alt="Instagram oficial de la NASA">
+                </a>
+            </div>
+
         </aside>
+        
+        <!-- Pie de pagina -->
         <footer>
             <small>Página web diseñada por Alejandro Castellanos Dalmau</small>
         </footer>
+
     </body>
 
 </html>
