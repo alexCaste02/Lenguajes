@@ -1,36 +1,43 @@
-/* Establecemos la fuente del texto */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+
+/* Propiedades del cuerpo general */
+body {   
+
     /* Eliminamos los márgenes del body */
+    margin: 0;
+
+    /* Utilizamos grid en el cuerpo para organizar los elementos de la página */
     display: grid;
-    /* Utilizamos grid layout para organizar los elementos de la página */
+    
+    /* Establacer tamaño de columnas del cuerpo entero (principalmente para el aside) */
     grid-template-columns: 100px auto;
 }
 
-/* Establecemos una imagen de fondo para la cabecera, ajustamos su tamaño y posición */
+/* Propiedades del encabezado */
 header {
+    /* Imagen de fondo */
     background-image: url(header-bg-art-scale-4_00x-gigapixel.jpg);
-    background-size: cover;
-    
-    
+    background-size: cover;    
 
-    /* Utilizamos grid layout para alinea el texto titulo */
+    /* Utilizamos grid layout para alinea el texto titulo (y elevarlo por encima del logo) */
     display: grid;
     grid-template-rows: 40% auto;
 
     /* Centramos los elementos vertical y horizontalmente */
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     text-align: center;
-    /* Centramos el texto */
-    padding: 20px;
+    
     /* Añadimos padding a la cabecera */
-    color: #d1c628;
+    padding: 20px;
+    
     /* Color de texto de encab*/
+    color: #d1c628;
+    
+    /* texto diferente en encabezado */
     font-family: 'Inter', sans-serif;
     font-size: large;
     text-shadow: 2px 2px rgb(51, 73, 192);
+
     height: 300px;
 
     /* Establecemos el grid area para la cabecera */
@@ -47,6 +54,8 @@ header {
 #logodiv {
     background-color: rgb(119, 201, 248);
     height: 120px;
+
+    /* colocar logo arriba a la izquierda del grid body*/
     grid-row: 2/3;
     grid-column: 1/2;
 
@@ -54,131 +63,137 @@ header {
     display: grid;
 }
 
-/* Limitamos el tamaño del logo y centramos el mismo */
-#logodiv>img {
-    max-height: 100px;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
-}
+    /* Limitamos el tamaño del logo y centramos el mismo */
+    #logodiv>img {
+        max-height: 100px;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
 
-/* Establecemos un color de fondo para la barra de navegación, el color del texto */
-nav {
+/* Propiedades de la barra de navegacion */
+nav {    
     background-color: #333;
     color: white;
+    width: 100%;
+    height: 100px;
+    font-family: Arial, sans-serif;
+
     /* Añadimos padding superior e inferior, centramos los elementos horizontal y verticalmente */
     padding: 10px 0;
     justify-content: center;
     align-items: center;
-    /* Utilizamos flexbox para organizar los elementos de la barra de navegación */
-    display: flex;
-    /* Hacemos que la barra de navegación sea "sticky" (se mantenga visible en todo momento) */
 
+    /* Utilizamos flexbox para organizar los elementos de la barra de navegación en linea */
+    display: flex;
+    
+    /* Hacemos que la barra de navegación sea "sticky" (se mantenga visible en todo momento) */
     position: sticky;
     top: 0;
+
+    /* Posicionamos el nav dentro del body */
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-
-    width: 100%;
-
-    height: 100px;
-
 }
 
-nav a {
-    color: white;
-    /* Establecemos el color del texto de los enlaces */
-    text-decoration: none;
-    /* Eliminamos la subraya de los enlaces */
-    border: 3px solid #282323;
-    border-radius: 15px;
+    nav a {
+        background-color: #4a4a4a;
+        color: white; 
+        border: 3px solid #282323;
+        border-radius: 15px;
+        padding: 15px 25px 15px 25px;
+        width: 150px;
+        
+        /* Eliminamos el subrayado de los enlaces */
+        text-decoration: none;             
 
-    background-color: #4a4a4a;
-    padding: 15px 25px 15px 25px;
+        /* Establecemos una transición para el color de los enlaces */
+        transition: color 0.2s;
+        
+        /* Negrita */
+        font-weight: bolder;
+    }
 
-    transition: color 0.2s;
-    /* Establecemos una transición para el color de los enlaces */
+    /* Enlace visitado cambia color */
+    nav a:visited {        
+        color: rgb(49, 35, 49);    
+    }
 
-    width: 150px;
-    font-weight: bolder;
-}
-
-nav a:visited {
-    color: rgb(49, 35, 49);
-    /* Cambiamos el color del texto cuando el enlace fue previamente visitado*/
-}
-
-nav a:hover {
-    color: gray;
     /* Cambiamos el color del texto cuando el ratón está sobre el enlace */
+    nav a:hover {        
+        color: gray;
+    }
 
-}
-
-nav a:active {
-    color: black;
     /* Cambiamos el color del texto cuando se hace clic en el enlace */
-}
+    nav a:active {    
+        color: black;
+    }
 
+    /* Propiedades de la lista del nav */
+    nav ul {
+        /* Heredamos el grid del nav */
+        display: inherit;
 
+        /* Alineamos */
+        text-align: center;
+        justify-content: center;
+        
+        /* Quitamos los puntos de la lista y el padding que esta crea */
+        list-style: none;        
+        padding: 0 0 0 0;
+    }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0 0 0 0;
-    /* quitamos el padding de la lista */
-    display: inherit;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0% 5% 0% 5%;
-    display: inherit;
-    align-items: center;
-}
-
-
-
+    /* Propiedades de los elementos de dicha lista */
+    nav li {
+        /* Centrado y separacion */
+        margin: 0% 5% 0% 5%;
+        display: inherit;
+        align-items: center;
+    }
 
 main {
-    display: inherit;
-    
-    /* Centramos los elementos horizontalmente */
-    grid-row: 3;
-    grid-column: 2;
-
     background-image: url(endless-constellation.png);
-    background-repeat: repeat;
+    background-repeat: cover;
     background-attachment: fixed;
     color: white;
     background-size: 110px;
+
+    /* Heredamos el grid del body */
+    display: inherit;
+    
+    /* Posicionamos el main bajo el nav y a la derecha del body */
+    grid-row: 3;
+    grid-column: 2;    
 }
 
-
-
 article {
+    /* Alineación de texto centrada */
     text-align: center;
-    /* alineación de texto justificada */
+    
+    /* Interlineado */
     line-height: 1.5;
-    /* interlineado de 1.5 */
+    
     text-indent: 15px;
     /* sangría en primera línea de párrafo de 1em */
     font-family: 'Arial', sans-serif;
     /* tipo de fuente Arial para el título y cuerpo del texto */
     
-    font-size: 16px;
-    /* tamaño de fuente de 16px para el cuerpo del texto */
+    
     margin: 0 auto;
     /* márgenes automáticos */
     
     padding: 2%;
+
+    /* tamaño de fuente de 16px para el cuerpo del texto */
+    font-size: 16px;
 }
 
-/* Estilo específico para el título */
+/* Tamaño de fuente para los titulos */
 article h2 {
-    font-size: 30px;
-    /* tamaño de fuente para el título */
+    font-size: 30px;    
 }
 
+/* Ajustar unico video a la anchura del main*/
 video {
     width: 100%;
 }
@@ -387,22 +402,18 @@ footer {
     
 
     article{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     article h2 {
-        font-size: 25px;
+        font-size: 35px;
         /* tamaño de fuente para el título */
-    }
-    
+    } 
 
 
 }
 
-@media (max-width: 684px)  {
-
-    
-
+@media (max-width: 684px)  { 
     /* centrar fondo header cuando cambia tamaño*/
     header{
         background-position: center;
@@ -416,8 +427,6 @@ footer {
     main{
         grid-column: 1/3;
     }
-
-
     
     /*botones en vertical*/
     nav{
@@ -524,15 +533,13 @@ footer {
     }   
 
     article{
-        font-size: 12px;
+        font-size: 20px;
     }
 
     article h2 {
-        font-size: 20px;
+        font-size: 40px;
         /* tamaño de fuente para el título */
-    }
-    
+    }  
     
     
 }
-
