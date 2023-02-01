@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libreria>
+
+  <libro>
+    <titulo>1984</titulo>
+    <autoria>George Orwell</autoria>
+    <editorial>Debolsillo</editorial>
+    <ano>1948</ano>
+  </libro>
+  
+  <libro>
+    <titulo>El Imperio Final</titulo>
+    <autoria>Brandon Sanderson</autoria>
+    <editorial> ‎B de Bolsillo (Ediciones B)</editorial>
+    <ano>2006</ano>
+  </libro>
+  
+</libreria>
