@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<deportistas>
+
+  <deportista deporte="Atletismo">    
+      <nombre>Jesse Owens</nombre>
+  </deportista>
+  
+  <deportista deporte="Natación">
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+  
+  <deportista deporte="Salto de longitud">
+    <nombre>Emmy Fowler</nombre>
+  </deportista>
+  
+  <deportista deporte="Salto de altura">
+    <nombre>Steven Spielberg</nombre>
+  </deportista>
+  
+</deportistas>
