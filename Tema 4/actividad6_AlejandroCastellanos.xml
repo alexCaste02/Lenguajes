@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Inmobiliaria>
+  <Vivienda>
+    <Tipo>Piso</Tipo>
+    <Estado>Venta</Estado>
+    <Direccion>
+      <Calle>Calle Alpha</Calle>
+      <CodigoPostal>1234</CodigoPostal>
+      <Poblacion>Ciudad Real</Poblacion>
+    </Direccion>
+    <Precio>200000</Precio>
+  </Vivienda>
+  <Vivienda>
+    <Tipo>Casa</Tipo>
+    <Estado>Alquiler</Estado>
+    <Direccion>
+      <Calle>Calle Beta</Calle>
+      <CodigoPostal>5678</CodigoPostal>
+      <Poblacion>Madrid</Poblacion>
+    </Direccion>
+    <Precio>1000</Precio>
+  </Vivienda>
+  <Vivienda>
+    <Tipo>Adosado</Tipo>
+    <Estado>Venta</Estado>
+    <Direccion>
+      <Calle>Calle Sigma</Calle>
+      <CodigoPostal>9012</CodigoPostal>
+      <Poblacion>Barcelona</Poblacion>
+    </Direccion>
+    <Precio>400000</Precio>
+  </Vivienda>
+</Inmobiliaria>
