@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilocolores.css"?>
+
+<mezclas>
+  
+    <mezcla resultado="lila">
+      <color>rojo</color>
+      <color>azul</color>
+    </mezcla>
+    
+    <mezcla resultado="naranja">
+      <color>rojo</color>
+      <color>amarillo</color>
+    </mezcla>
+    
+    <mezcla resultado="lila">
+      <color>amarillo</color>
+      <color>azul</color>
+      <color>blanco</color>
+    </mezcla>
+
+</mezclas>
