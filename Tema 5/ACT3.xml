@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE matricula SYSTEM "matricula.dtd">
+<matricula>
+  <ciclo>Desarrollo de Aplicaciones Multiplataforma</ciclo>
+  <alumnado>
+    <alumno>
+      <nombre>Francisco Parra</nombre>
+      <anyo>2021</anyo>
+      <modulos>
+        <modulo>Lenguajes de marcas</modulo>
+        <modulo>Entornos de desarrollo</modulo>
+      </modulos>
+    </alumno>
+  </alumnado>
+</matricula>

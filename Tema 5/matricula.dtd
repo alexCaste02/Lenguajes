@@ -1,0 +1,8 @@
+<!DOCTYPE matricula [
+   <!ELEMENT matricula (nombre, caracteristicas, numero_de_lados)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT caracteristicas (color, tipo)>
+   <!ELEMENT color (#PCDATA)>
+   <!ELEMENT tipo (#PCDATA)>
+   <!ELEMENT numero_de_lados (#PCDATA)>
+]>
