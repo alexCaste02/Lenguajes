@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos SYSTEM "productos.dtd">
+<productos>
+   <producto>
+      <identificacion>
+         Quedan 14 unidades.
+         <codigo>MAR264</codigo>
+      </identificacion>
+      <nombre>martillo</nombre>
+   </producto>
+   <producto>
+      <identificacion>
+         <codigo>DES387</codigo>
+         <id>678984</id>
+         No hay stock.
+      </identificacion>
+      <nombre>destornillador</nombre>
+   </producto>
+</productos>
