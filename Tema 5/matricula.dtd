@@ -1,8 +1,11 @@
-<!DOCTYPE matricula [
-   <!ELEMENT matricula (nombre, caracteristicas, numero_de_lados)>
-   <!ELEMENT nombre (#PCDATA)>
-   <!ELEMENT caracteristicas (color, tipo)>
-   <!ELEMENT color (#PCDATA)>
-   <!ELEMENT tipo (#PCDATA)>
-   <!ELEMENT numero_de_lados (#PCDATA)>
-]>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT matricula (ciclo, alumnado)>
+<!ELEMENT ciclo (#PCDATA)>
+<!ELEMENT alumnado (alumno)>
+<!ELEMENT alumno (nombre,anyo,modulos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT modulos (modulo+)>
+<!ELEMENT modulo (#PCDATA)>
+
