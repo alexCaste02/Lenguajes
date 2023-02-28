@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albaran SYSTEM "albaranes.dtd">
+<albaran>
+    <numero>7</numero>
+    <fecha>2021-10-03</fecha>
+    <cliente id="15">
+        <nombre>Pepe González</nombre>
+        <poblacion>Torrevieja</poblacion>        
+    </cliente>
+    <articulos>
+        <compra>
+            <articulo codigo="0">
+                <descripcion>Vino a granel</descripcion> 
+                <granel/>
+                <precio>0.10</precio>
+            </articulo>
+            <cantidad>5</cantidad>
+        </compra>        
+    </articulos>    
+</albaran>

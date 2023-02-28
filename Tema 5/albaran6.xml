@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albaran SYSTEM "albaranes.dtd">
+<albaran>
+    <numero>6</numero>
+    <fecha>2021-10-02</fecha>
+    <cliente id="15">
+        <nombre>María Fuentes</nombre>
+        <poblacion>San Pedro del Pinatar</poblacion>        
+    </cliente>
+    <articulos>
+        <compra>
+            <articulo codigo="9">
+                <descripcion>Vino blanco. Viña Serea 75 cl</descripcion>
+                <botella/>
+                <precio>0.85</precio>
+            </articulo>
+            <cantidad>15</cantidad>
+            <descuento>5%</descuento>
+        </compra>        
+    </articulos>    
+</albaran>

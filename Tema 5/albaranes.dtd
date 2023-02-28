@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT albaran (numero,fecha,cliente,articulos)>
+<!ELEMENT numero #PCDATA #REQUIRED>
+<!ELEMENT fecha #PCDATA #REQUIRED>
+<!ELEMENT cliente (nombre,poblacion)
+<!ATTLIST cliente id CDATA #REQUIRED>
+<!ELEMENT nombre #PCDATA #REQUIRED>
+<!ELEMENT poblacion #PCDATA #REQUIRED>
+<!ELEMENT articulos (compra+)>
+<!ELEMENT compra (articulo,cantidad)>
+<!ELEMENT articulo (descripcion|botella|granel|precio)*>
+<!ELEMENT descripcion CDATA #REQUIRED>
+<!ELEMENT botella EMPTY>
+<!ELEMENT granel EMPTY>
+<!ELEMENT precio #PCDATA>
+
+
+<!ELEMENT cantidad #PCDATA>
+
+
+
+
+
+
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+

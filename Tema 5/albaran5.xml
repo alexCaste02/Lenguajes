@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albaran SYSTEM "albaranes.dtd">
+<albaran>
+    <numero>5</numero>
+    <fecha>2021-10-02</fecha>
+    <cliente id="1">
+        <nombre>Pedro García</nombre>
+        <poblacion>Pilar de la Horadada</poblacion>
+    </cliente>
+    <articulos>
+        <compra>
+            <articulo codigo="12">
+                <descripcion>Vino tinto Rioja reserva. Marques de Riscal 75 cl</descripcion>
+                <botella/>
+                <precio>12.85</precio>
+            </articulo>
+            <cantidad>2</cantidad>
+        </compra>
+        <compra>
+            <articulo codigo="12">
+                <descripcion>Vino Blanco D.O.Penedès. Vinya Sol Torres 75 cl</descripcion>
+                <botella/>
+                <precio>4.80</precio>
+            </articulo>
+            <cantidad>1</cantidad>
+        </compra>        
+    </articulos>    
+</albaran>
