@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresas SYSTEM "empresas.dtd">
+<empresas>
+  <grupo>
+    &proveedores;
+    <empresa id="p1">
+      <nombre>Surinver</nombre>
+      <poblacion>El Dorado</poblacion>
+      <provincia>Aquella</provincia>
+    </empresa>
+    <empresa id="p2">
+      <nombre>Don Simón</nombre>
+      <poblacion>Jumilla</poblacion>
+      <provincia>&mu;</provincia>
+    </empresa>
+  </grupo>
+  <grupo>
+    &clientes;
+    <empresa id="c1">
+      <nombre>Aráez</nombre>
+      &local;
+    </empresa>
+    <empresa id="c2">
+      <nombre>Venezuela</nombre>
+      <poblacion>Lo Pagán</poblacion>
+      <provincia></provincia>
+    </empresa>
+  </grupo>
+</empresas>

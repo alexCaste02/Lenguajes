@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personal SYSTEM "personal.dtd">
+<personal>
+
+  <persona id="d" salario="50">
+    <datos>
+      <nombre>Alberto</nombre>
+      <apellido>Martinez</apellido>
+    </datos>
+    <email>albmar99@gmail.com</email>
+    <url href="http://aules.edu.gva.es/fp/mod/assign/view.php?id=2630695"/>
+    <relacion trabajador="t1 t2 t3"/>
+  </persona>
+  
+  <persona id="t1" salario="25">
+    <datos>
+      <nombre>Bruno</nombre>
+      <apellido>Perez</apellido>
+    </datos>
+    <email>bruper00@gmail.com</email>
+    <email>bruper00@hotmail.es</email>
+    <url href="http://www.stylusstudio.com/SSDN"/>
+    <relacion director="d"/>
+  </persona>
+  
+  <persona id="t2" salario="30">
+    <datos>
+      <nombre>Carmelo</nombre>
+      <apellido>Sanchez</apellido>
+    </datos>
+    <email>bruper00@gmail.com</email>
+    <email>bruper00@hotmail.es</email>
+    <url href="http://www.stylusstudio.com/SSDN"/>
+  
+  </persona>
+  
+  <persona id="t3" >
+    <datos>
+      <nombre>David</nombre>
+      <apellido>Gomez</apellido>
+    </datos>
+    <email>bruper00@gmail.com</email>
+    <email>bruper00@hotmail.es</email>
+    <url href="http://www.stylusstudio.com/SSDN"/>
+    <relacion director="d"/>
+  </persona>
+  
+</personal>

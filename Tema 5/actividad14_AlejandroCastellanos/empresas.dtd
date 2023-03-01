@@ -1,0 +1,15 @@
+  <!ELEMENT empresas (grupo+)>
+  <!ELEMENT grupo ((proveedores | clientes), empresa+)>
+  <!ELEMENT proveedores (codigo, descripcion)>
+  <!ELEMENT clientes (codigo, descripcion)>
+  <!ELEMENT empresa (nombre, poblacion, provincia)>
+    <!ATTLIST empresa id ID #REQUIRED>
+  <!ELEMENT codigo (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT poblacion (#PCDATA)>
+  <!ELEMENT provincia (#PCDATA)>
+  <!ENTITY proveedores SYSTEM "proveedores.xml">
+  <!ENTITY clientes SYSTEM "clientes.xml">
+  <!ENTITY local SYSTEM "local.xml">
+  <!ENTITY mu "Murcia">
