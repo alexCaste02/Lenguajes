@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="altura">
+    <xsi:simpleType>
+      <xsi:restriction base="xsi:decimal">
+        <xsi:pattern value="(\d(.\d{1,2})?){0,3}"/>
+      </xsi:restriction>
+    </xsi:simpleType>
+  </xsi:element>
+</xsi:schema>
+

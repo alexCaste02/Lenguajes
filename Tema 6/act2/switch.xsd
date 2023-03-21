@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="interruptor" type="xsi:boolean"/>
+</xsi:schema>

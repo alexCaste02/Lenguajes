@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="edad">
+    <xsi:simpleType>
+      <xsi:restriction base="xsi:int">
+        <xsi:minInclusive value="0"/>
+        <xsi:maxInclusive value="120"/>
+      </xsi:restriction>
+    </xsi:simpleType>
+  </xsi:element>
+</xsi:schema>
+
