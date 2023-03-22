@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="tipobici">
+    <xsi:simpleType>
+      <xsi:restriction base="xsi:string">
+        <xsi:enumeration value="MTB"/>
+        <xsi:enumeration value="Gravel"/>
+        <xsi:enumeration value="Carretera"/>
+      </xsi:restriction>
+    </xsi:simpleType>
+  </xsi:element>
+</xsi:schema>
