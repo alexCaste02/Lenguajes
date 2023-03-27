@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="animal">
+    <xsi:complexType>
+     <xsi:choice>
+        <xsi:sequence>
+          <xsi:element name="nombrecomun" type="xsi:string"/>
+          <xsi:element name="nombrecientifico" type="xsi:string"/>
+        </xsi:sequence>
+        <xsi:sequence>
+        <xsi:element name="nombrecientifico" type="xsi:string"/>
+        <xsi:element name="nombrecomun" type="xsi:string"/>
+      </xsi:sequence>
+      </xsi:choice>
+    </xsi:complexType>
+  </xsi:element>
+</xsi:schema>
+

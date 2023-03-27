@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="especie">
+    <xsi:complexType>
+      <xsi:choice>
+        <xsi:element name="nombrecomun" type="xsi:string"/>
+        <xsi:element name="nombrecientifico" type="xsi:string"/>
+      </xsi:choice>
+    </xsi:complexType>
+  </xsi:element>
+</xsi:schema>
+

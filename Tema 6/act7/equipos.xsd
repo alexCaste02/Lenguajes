@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="equipo">
+    <xsi:complexType>
+      <xsi:sequence>
+        <xsi:element name="nombre" type="xsi:string"/>
+        <xsi:element name="nacionalidad" type="xsi:string"/>
+        <xsi:element name="cantidadciclistas" type="xsi:int"/>
+        <xsi:element name="marcabici" type="xsi:string"/>
+      </xsi:sequence>
+    </xsi:complexType>
+  </xsi:element>
+</xsi:schema>
+
