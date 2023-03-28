@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+  <xsi:element name="ciclista">
+    <xsi:complexType>
+     <xsi:simpleContent>
+        <xsi:extension base="xsi:string">
+         <xsi:attribute name="tipo" type="xsi:string" use="required"/>
+         <xsi:attribute name="tours" type="xsi:int" use="required"/>
+        </xsi:extension>
+      </xsi:simpleContent>
+    </xsi:complexType>
+  </xsi:element>
+</xsi:schema>

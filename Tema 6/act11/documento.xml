@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+            xs:noNamespaceSchemaLocation="documento.xsd"
+            idioma="Castellano">
+              hola
+</documento>
+
+<!-- Permite validar cualquier elemento llamado "documento"
+que tenga como atributo "Castellano", "Inglés", "Francés", 
+o "Catalán". Debe tener alguno de ellos, ya que es *required*
+ -->

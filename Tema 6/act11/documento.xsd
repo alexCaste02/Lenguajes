@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="documento">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+               <xs:attribute name="idioma" use="required">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Castellano"/>
+                    <xs:enumeration value="Inglés"/>
+                    <xs:enumeration value="Francés"/>
+                    <xs:enumeration value="Catalán"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
