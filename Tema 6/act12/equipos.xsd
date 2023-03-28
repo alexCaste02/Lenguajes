@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+
+<xsi:simpleType name="cantidad">
+  <xsi:restriction base="xsi:int">
+    <xsi:minInclusive value="7"/>
+    <xsi:maxInclusive value="30"/>
+  </xsi:restriction>
+</xsi:simpleType>
+
+  <xsi:element name="equipo">
+    <xsi:complexType>
+      <xsi:sequence>
+        <xsi:element name="nombre" type="xsi:string"/>
+        <xsi:element name="nacionalidad" type="xsi:string"/>
+        <xsi:element name="cantidadciclistas" type="cantidad"/>
+        <xsi:element name="marcabici" type="xsi:string"/>
+      </xsi:sequence>
+    </xsi:complexType>
+  </xsi:element>
+</xsi:schema>
+
