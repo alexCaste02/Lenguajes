@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="equipos.xsd">
+            <nombre>SD Worx</nombre>
+            <nacionalidad>Países Bajos</nacionalidad>
+            <cantidadciclistas>13</cantidadciclistas>
+            <marcabici>Specialized</marcabici>
+  </equipo>

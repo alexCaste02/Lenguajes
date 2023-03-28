@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<productos xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+            xs:noNamespaceSchemaLocation="productos.xsd">
+  <tablet>
+    <modelo>Samsung galaxy Tab S6</modelo>
+    <precio>299</precio>
+    <ram>4</ram>
+    <almacenamiento>64</almacenamiento>
+    <pantalla>10.4</pantalla>
+  </tablet>
+  <ordenador>
+    <modelo>PcCom Silver</modelo>
+    <precio>1027</precio>
+    <ram>16</ram>
+    <almacenamiento>1024</almacenamiento>
+    <tarjetagrafica>GeForce GTX 1660</tarjetagrafica>
+  </ordenador>
+</productos>

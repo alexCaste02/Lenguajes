@@ -14,9 +14,7 @@
     <xs:complexType>
         <xs:simpleContent>
             <xs:extension base="xs:string">
-               <xs:attribute name="idioma" use="required">
-               idiomas
-              </xs:attribute>
+               <xs:attribute name="idioma" use="required" type="idiomas"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
