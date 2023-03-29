@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsi:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+
+	<xsi:simpleType name="cantidad">
+		<xsi:restriction base="xsi:int">
+			<xsi:minInclusive value="7"/>
+			<xsi:maxInclusive value="30"/>
+		</xsi:restriction>
+	</xsi:simpleType>
+	
+	<xsi:simpleType name="tipociclista">
+		<xsi:restriction base="xsi:string">
+			<xsi:enumeration value="clasicomana"/>
+			<xsi:enumeration value="esprinter"/>
+			<xsi:enumeration value="escaladora"/>
+			<xsi:enumeration value="vueltomana"/>
+		</xsi:restriction>
+	</xsi:simpleType>
+
+	<xsi:element name="equipo">
+		<xsi:complexType >
+			<xsi:sequence>
+				<xsi:element name="nombre" type="xsi:string"/>
+				<xsi:element name="nacionalidad" type="xsi:string"/>
+				<xsi:element name="cantidadciclistas" type="cantidad"/>
+				<xsi:element name="marcabici" type="xsi:string"/>
+				<xsi:choice>
+					<xsi:element name="uci"/>
+					<xsi:element name="protour"/>
+				</xsi:choice>
+				<xsi:element name="direccion">
+					<xsi:complexType>
+						<xsi:sequence>
+							<xsi:element name="director" maxOccurs="3">
+								<xsi:complexType>
+									<xsi:sequence>
+										<xsi:element name="nombre" type="xsi:string"/>
+										<xsi:element name="apellido" type="xsi:string"/>
+									</xsi:sequence>
+								</xsi:complexType>
+							</xsi:element>
+						</xsi:sequence>
+					</xsi:complexType>
+				</xsi:element>
+				<xsi:element name="ciclistas" >
+					<xsi:complexType>
+						<xsi:sequence>
+							<xsi:element name="ciclista" minOccurs="7" maxOccurs="30">
+								<xsi:complexType mixed="true">
+									<xsi:sequence>
+										<xsi:element name="nombre" type="xsi:string"/>
+										<xsi:element name="apellido" type="xsi:string"/>
+										<xsi:choice>
+											<xsi:element name="edad" type="xsi:int"/>
+											<xsi:element name="nacimiento" type="xsi:date"/>
+										</xsi:choice>
+										<xsi:element name="puntos" type="xsi:int" minOccurs="0"/>
+									</xsi:sequence>
+									<xsi:attribute name="tipo" type="tipociclista"/>
+								</xsi:complexType>
+							</xsi:element>
+						</xsi:sequence>
+					</xsi:complexType>
+				</xsi:element>
+			</xsi:sequence>
+		</xsi:complexType>
+	</xsi:element>
+	
+</xsi:schema>
+

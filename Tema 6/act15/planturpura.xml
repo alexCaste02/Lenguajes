@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="equipos.xsd">
+            <nombre>Plantur Pura</nombre>
+            <nacionalidad>Bélgica</nacionalidad>
+            <cantidadciclistas>7</cantidadciclistas>
+            <marcabici>Stevens</marcabici>
+            <uci/>
+            <direccion>
+              <director>
+                <nombre>Heidi</nombre>
+                <apellido>Van De Vijver</apellido>
+              </director>
+              <director>
+                <nombre>Philip</nombre>
+                <apellido>Roodhooft</apellido>
+              </director>
+            </direccion>
+            <ciclistas>
+              <ciclista tipo="clasicomana">
+                <nombre>Ceylin del Carmen</nombre>
+                <apellido>Alvarado</apellido>
+                <edad>22</edad>
+                <puntos>6</puntos>
+              </ciclista>
+              <ciclista tipo="esprinter">
+                <nombre>Puck</nombre>
+                <apellido>Pieterse</apellido>
+                <edad>19</edad>
+              </ciclista>
+              <ciclista tipo="escaladora">
+                <nombre>Annemarie</nombre>
+                <apellido>Worst</apellido>
+                <nacimiento>1995-12-19</nacimiento>
+                <puntos>5</puntos>
+              </ciclista>
+              <ciclista tipo="vueltomana">
+                <nombre>Yara</nombre>
+                <apellido>Kastelijn</apellido>
+                <edad>23</edad>
+                <puntos>77</puntos>
+              </ciclista>
+              <ciclista tipo="esprinter">
+                <nombre>Inge</nombre>
+                <apellido>Van der Heijden</apellido>
+                <nacimiento>1999-08-12</nacimiento>
+                <puntos>46</puntos>
+              </ciclista>
+              <ciclista tipo="clasicomana">
+                <nombre>Marthe</nombre>
+                <apellido>Truyen</apellido>
+                <edad>21</edad>
+                <puntos>16</puntos>
+              </ciclista>
+              <ciclista tipo="vueltomana">
+                <nombre>Sanne</nombre>
+                <apellido>Cant</apellido>
+                <nacimiento>1990-10-08</nacimiento>
+              </ciclista>
+            </ciclistas>
+  </equipo>
