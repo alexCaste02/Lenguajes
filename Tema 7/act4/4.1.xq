@@ -1,0 +1,1 @@
+concat(//ciclista[@tipo="clasicomana" and edad>25]/nombre," ",//ciclista[@tipo="clasicomana" and edad>25]/apellido)
