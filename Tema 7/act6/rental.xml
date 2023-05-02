@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos>
+	<coches>
+		<coche cod="c01">
+			<matricula>56723LGT</matricula>
+			<marca modelo="Arkana">Renault</marca>
+			<color>rojo</color>
+			<matriculacion>2021-12-10</matriculacion>
+			<precio>60.5</precio>
+			<incidencias>
+				<fecha>2022-01-06</fecha>: rozadura puerta delantera derecha
+			</incidencias>
+			<promocion/>
+      <puertas>5</puertas>
+      <distintivoambiental>azul</distintivoambiental>
+		</coche>
+		<coche cod="c02">
+			<matricula>46725LAI</matricula>
+			<marca modelo="Juke">Nissan</marca>
+			<color>cereza negro</color>
+			<matriculacion>2019-11-19</matriculacion>
+			<precio>48.3</precio>
+			<puertas>3</puertas>
+			<distintivoambiental>verde</distintivoambiental>
+		</coche>
+		<coche cod="c03">
+			<matricula>66475GRI</matricula>
+			<marca modelo="3008">Peugeot</marca>
+			<color>verde</color>
+			<matriculacion>2018-02-20</matriculacion>
+			<precio>36.2</precio>
+			<puertas>5</puertas>
+      <distintivoambiental>verde</distintivoambiental>
+		</coche>
+		<coche cod="c04">
+			<matricula>24735FEG</matricula>
+			<marca modelo="C4">Citroën</marca>
+			<color>plata</color>
+			<matriculacion>2020-01-09</matriculacion>
+			<precio>45.8</precio>
+			<incidencias>
+				<fecha>2022-02-16</fecha>: retrovisor derecho roto
+			</incidencias>
+			<promocion/>
+			<puertas>5</puertas>
+      <distintivoambiental>azul</distintivoambiental>
+		</coche>
+	</coches>
+</vehiculos>
