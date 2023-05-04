@@ -6,4 +6,3 @@ return
  <azul>{$a}</azul>
  <verde>{$v}</verde>
 </matriculas>
-
