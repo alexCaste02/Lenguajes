@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ue>
+  <estado nombre="Alemania">
+    <entrada>1958-01-01</entrada>
+    <poblacion>83155031</poblacion>
+    <superficie>358000</superficie>
+    <pib>3570620</pib>
+    <idh>0.947</idh>
+  </estado>
+  <estado nombre="Austria">
+    <entrada>1995-01-01</entrada>
+    <poblacion>8932664</poblacion>
+    <superficie>84000</superficie>
+    <pib>403370</pib>
+    <idh>0.922</idh>
+  </estado>
+  <estado nombre="Bélgica">
+    <entrada>1958-01-01</entrada>
+    <poblacion>11554767</poblacion>
+    <superficie>31000</superficie>
+    <pib>507194</pib>
+    <idh>0.931</idh>
+  </estado>
+  <estado nombre="Bulgaria">
+    <entrada>2007-01-01</entrada>
+    <poblacion>6916548</poblacion>
+    <superficie>111000</superficie>
+    <pib>67872</pib>
+    <idh>0.816</idh>
+  </estado>
+  <estado nombre="República Checa">
+    <entrada>2004-01-01</entrada>
+    <poblacion>10701777</poblacion>
+    <superficie>79000</superficie>
+    <pib>238714</pib>
+    <idh>0.9</idh>
+  </estado>
+  <estado nombre="Chipre">
+    <entrada>2004-01-01</entrada>
+    <poblacion>896007</poblacion>
+    <superficie>9250</superficie>
+    <pib>23437</pib>
+    <idh>0.887</idh>
+  </estado>
+  <estado nombre="Croacia">
+    <entrada>2013-01-01</entrada>
+    <poblacion>4036355</poblacion>
+    <superficie>57000</superficie>
+    <pib>57200</pib>
+    <idh>0.851</idh>
+  </estado>
+  <estado nombre="Dinamarca">
+    <entrada>1973-01-01</entrada>
+    <poblacion>5840045</poblacion>
+    <superficie>43000</superficie>
+    <pib>335705</pib>
+    <idh>0.94</idh>
+  </estado>
+  <estado nombre="Eslovaquia">
+    <entrada>2004-05-01</entrada>
+    <poblacion>5459781</poblacion>
+    <superficie>49000</superficie>
+    <pib>97123</pib>
+    <idh>0.86</idh>
+  </estado>
+  <estado nombre="Eslovenia">
+    <entrada>2004-05-01</entrada>
+    <poblacion>2108977</poblacion>
+    <superficie>21000</superficie>
+    <pib>52020</pib>
+    <idh>0.917</idh>
+  </estado>
+  <estado nombre="España">
+    <entrada>1986-01-01</entrada>
+    <poblacion>47326687</poblacion>
+    <superficie>506000</superficie>
+    <pib>1205063</pib>
+    <idh>0.904</idh>
+  </estado>
+  <estado nombre="Estonia">
+    <entrada>2004-05-01</entrada>
+    <poblacion>1330068</poblacion>
+    <superficie>45000</superficie>
+    <pib>30660</pib>
+    <idh>0.892</idh>
+  </estado>
+  <estado nombre="Finlandia">
+    <entrada>1995-01-01</entrada>
+    <poblacion>5533793</poblacion>
+    <superficie>549000</superficie>
+    <pib>252934</pib>
+    <idh>0.938</idh>
+  </estado>
+  <estado nombre="Francia">
+    <entrada>1958-01-01</entrada>
+    <poblacion>67656682</poblacion>
+    <superficie>549000</superficie>
+    <pib>2483616</pib>
+    <idh>0.901</idh>
+  </estado>
+  <estado nombre="Grecia">
+    <entrada>1981-01-01</entrada>
+    <poblacion>10678632</poblacion>
+    <superficie>132000</superficie>
+    <pib>182830</pib>
+    <idh>0.888</idh>
+  </estado>
+  <estado nombre="Hungría">
+    <entrada>2004-05-01</entrada>
+    <poblacion>9730772</poblacion>
+    <superficie>93000</superficie>
+    <pib>154124</pib>
+    <idh>0.854</idh>
+  </estado>
+  <estado nombre="Irlanda">
+    <entrada>1973-01-01</entrada>
+    <poblacion>5006324</poblacion>
+    <superficie>70000</superficie>
+    <pib>154124</pib>
+    <idh>0.955</idh>
+  </estado>
+  <estado nombre="Italia">
+    <entrada>1958-01-01</entrada>
+    <poblacion>59236213</poblacion>
+    <superficie>301000</superficie>
+    <pib>1775436</pib>
+    <idh>0.892</idh>
+  </estado>
+  <estado nombre="Luxemburgo">
+    <entrada>1958-01-01</entrada>
+    <poblacion>634730</poblacion>
+    <superficie>2590</superficie>
+    <pib>73314</pib>
+    <idh>0.916</idh>
+  </estado>
+    <estado nombre="Países Bajos">
+    <entrada>1958-01-01</entrada>
+    <poblacion>17475415</poblacion>
+    <superficie>42000</superficie>
+    <pib>860719</pib>
+    <idh>0.944</idh>
+  </estado>
+  <estado nombre="Portugal">
+    <entrada>1986-01-01</entrada>
+    <poblacion>10298252</poblacion>
+    <superficie>92000</superficie>
+    <pib>211278</pib>
+    <idh>0.864</idh>
+  </estado>
+  <estado nombre="Suecia">
+    <entrada>1995-01-01</entrada>
+    <poblacion>10379295	</poblacion>
+    <superficie>447000</superficie>
+    <pib>537830</pib>
+    <idh>0.945</idh>
+  </estado>
+</ue>
